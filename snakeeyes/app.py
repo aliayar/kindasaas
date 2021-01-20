@@ -1,6 +1,6 @@
 from flask import Flask
 
-def create.app():
+def create_app():
     """
     Create a Flask application using the app factory pattern.
     :return: Flask app

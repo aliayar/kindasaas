@@ -1,4 +1,4 @@
-FROM python:3.9.1-slim-buster
+FROM python:3.9-slim-buster
 MAINTAINER Ali Ayar <gavaryus@gmail.com>
 
 ENV INSTALL_PATH /snakeeyes
