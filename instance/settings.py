@@ -1,1 +1,1 @@
-DEBUG = False
+HELLO = 'HIYAAAA'
