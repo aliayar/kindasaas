@@ -2,6 +2,7 @@ FROM python:3.9-slim-buster
 MAINTAINER Ali Ayar <gavaryus@gmail.com>
 
 ENV INSTALL_PATH /snakeeyes
+ENV PYTHONDONTWRITEBYTECODE 1
 RUN mkdir -p $INSTALL_PATH
 
 WORKDIR $INSTALL_PATH
