@@ -30,3 +30,11 @@ class TestPage(object):
         """
         response = client.get(url_for('page.faq'))
         assert response.status_code == 200
+
+    def test_faq_page_title(self, client):
+        """
+        This page should have a title
+        """
+        response = client.get(url_for('page.faq'))
+        assert '<title>' in str(response.data)
+        assert '</title>' in str(response.data)
