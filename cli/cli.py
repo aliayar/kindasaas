@@ -39,7 +39,7 @@ class CLI(click.MultiCommand):
 
         return ns['cli']
 
-    @click.command(cls=CLI)
-    def cli():
-        """Commands to help manage your project."""
-        pass
+@click.command(cls=CLI)
+def cli():
+    """Commands to help manage your project."""
+    pass
