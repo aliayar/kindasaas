@@ -1,5 +1,11 @@
 .git
-.dockerignore
 .vscode
 .__pycache__
 .pytest_cache
+
+# Virtual environment
+.env/
+.venv/
+venv/
+venv
+.venv

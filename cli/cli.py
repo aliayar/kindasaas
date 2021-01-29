@@ -5,6 +5,7 @@ import click
 cmd_folder = os.path.join(os.path.dirname(__file__), 'commands')
 cmd_prefix = 'cmd_'
 
+
 class CLI(click.MultiCommand):
     def list_commands(self, ctx):
         """
@@ -18,7 +19,9 @@ class CLI(click.MultiCommand):
         for filename in os.listdir(cmd_folder):
             if filename.endswith('.py') and filename.startswith(cmd_prefix):
                 commands.append(filename[4:-3])
+
         commands.sort()
+
         return commands
 
     def get_command(self, ctx, name):
@@ -39,7 +42,8 @@ class CLI(click.MultiCommand):
 
         return ns['cli']
 
+
 @click.command(cls=CLI)
 def cli():
-    """Commands to help manage your project."""
+    """ Commands to help manage your project. """
     pass

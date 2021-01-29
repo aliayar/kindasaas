@@ -3,13 +3,14 @@ import subprocess
 
 import click
 
+
 @click.command()
 @click.argument('path', default=os.path.join('snakeeyes', 'tests'))
 def cli(path):
     """
-    Run pytest.
+    Run tests with Pytest.
 
-    :param path: Testing path
+    :param path: Test path
     :return: Subprocess call result
     """
     cmd = 'py.test {0}'.format(path)

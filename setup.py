@@ -9,7 +9,7 @@ setup(
         'click',
     ],
     entry_points="""
-    [console_scripts]
-    snakeeyes=cli.cli:cli
+        [console_scripts]
+        snakeeyes=cli.cli:cli
     """,
 )
