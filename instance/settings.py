@@ -1,1 +1,3 @@
-DEBUG = False
+DEBUG = True
+
+SECRET_KEY = 'anotherjokeofopsecisimminentyouthinkso'
