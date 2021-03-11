@@ -1,3 +1,10 @@
 DEBUG = False
 
-SECRET_KEY = 'anotherjokeofopsecisimminent'
+SECRET_KEY = 'anotherjokeofopsecisimminent
+SERVER_NAME = 'example.com'
+
+MAIL_USERNAME = 'you@realemailaccount.com'
+MAIL_PASSWORD = 'thebestpasswordyouevermade'
+
+CELERY_BROKER_URL = 'redis://:amuchmoresecurepassword@redis:6379/0'
+CELERY_RESULT_BACKEND = 'redis://:amuchmoresecurepassword@redis:6379/0'
